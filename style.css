@@ -22,6 +22,9 @@
     --toastSystemBg: #d3d3d4;
     --toastSystemCl: #141619;
     --animationHover : all linear 0.3s;
+    --cl_tit_fl: #ffd641;
+    --bg_fl_1: #d70018;
+    --bg_fl_2: #470006;
 }
 body{
     overflow-x: hidden;
@@ -164,6 +167,7 @@ header{
     display: none;
     background: linear-gradient(90deg, var(--mainColor), var(--mainColor2));
     padding: 10px;
+    z-index: 10000;
 }
 .menu-mobile input{
     height: 40px;
@@ -221,6 +225,54 @@ header{
     border-top-right-radius: 18px;
     background-color: #fff;
     display: none;
+    z-index: 10000;
+}
+.flash-sale{
+    background: linear-gradient(var(--bg_fl_1) 0%, var(--bg_fl_2));
+}
+.flash-item{
+    position: relative;
+    width: 215.75px;
+    margin-right: 18px;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 0px rgba(60, 64, 67, 0.25);
+}
+.flash-top .title{
+    font-size: 28px;
+    color: var(--cl_tit_fl);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.flash-text .price-sale{
+    font-size: 12px;
+    color: var(--textColor);
+    text-decoration: line-through;
+}
+.label-sale{
+    top: 5px;
+    left: -5px;
+    color: #ffffff;
+    background: var(--accentColor2);
+    padding: 4px 6px;
+    z-index: 2;
+    font-size: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    box-shadow: 0px 0px 5px 1px #fff;
+}
+.label-tag{
+    background: linear-gradient(to right, #ec1a17, #ffad00);
+    left: 10px;
+    top: 58%;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 0px 2px;
+    font-size: 12px;
+    color: #fff;
 }
 @keyframes deg{
     0% {
@@ -341,6 +393,9 @@ header{
     .slider img{
         display: none;
     }
+    .product-box{
+        margin-right: 20px;
+     }
 }
 .swiper {
     width: 600px;
