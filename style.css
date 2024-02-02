@@ -28,7 +28,8 @@
 }
 body{
     overflow-x: hidden;
-    background-color: var(--lightLeftColBackground);
+    background-color: var(--lightLeftColBackground) !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 main{
 }
@@ -100,9 +101,11 @@ header{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
 }
 .phone p , span{
     font-weight: bold;
+    font-size: 14px;
 }
 .phone i{
     animation: deg 1.5s ease infinite;
@@ -185,6 +188,12 @@ header{
 }
 .product-hot{
     border-radius: 10px;
+}
+.product-hot h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--textColor);
+    font-size: 22px;
 }
 .product-box{
     text-align: center;
@@ -275,14 +284,31 @@ header{
     color: #fff;
 }
 .product-filter-top-box{
-    border: 1px solid red;
+    border: 1px solid  var(--toastSuccessBg);
     padding: 5px 15px;
     border-radius: 10px;
     margin-right: 20px;
+    cursor: pointer;
+    transition: var(--animationHover);
+}
+.product-filter-top-box:hover{
+    border: 1px solid  var(--accentColor2);
 }
 .product-filter-top-box img{
     width: 40px;
     margin-right: 10px;
+}
+.flash-day span{
+    border: 2px solid #fff;
+    padding: 8px;
+    border-radius: 10px;
+}
+.carousel-inner{
+    height: 400px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
 }
 @keyframes deg{
     0% {
@@ -391,6 +417,22 @@ header{
     .menu-mobile-mb{
         display: block;
     }
+    .flash-top .title{
+        font-size: 22px;
+    }
+    .text-sale{
+        display: none;
+    }
+    .product-filter-top-box{
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .product-filter-top-box span{
+        font-size: 10px;
+    }
+    .carousel-inner{
+        height: 250px;
+    }
 }
 @media screen and (max-width: 670px){
     .logo-mb{
@@ -422,9 +464,10 @@ header{
     }
     .product-filter-top-box{
         margin-right: 5px;
+        margin-top: 5px;
     }
     .product-filter-top-box span{
-        font-size: 14px;
+        font-size: 12px;
         padding: 5px;
     }
     .flash-item{
@@ -438,5 +481,9 @@ header{
     }
     .label-tag{
         font-size: 8px;
+        top: 40%;
+    }
+    .carousel-inner{
+        height: 100px;
     }
 }
