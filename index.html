@@ -23,7 +23,7 @@
             <div class="menu-top">
                 <div class="row align-items-center">
                     <div class="col-lg-2 p-0 position-relative">
-                       <a href=""> <img src="./img/logo.webp" alt="" class="img-fluid pointer-event"></a>
+                        <a href=""> <img src="./img/logo.webp" alt="" class="img-fluid pointer-event"></a>
                     </div>
                     <div class="p-0 top-right col-lg-10 d-flex align-items-center gap-2">
                         <a class="system">
@@ -108,7 +108,10 @@
         <div class="container">
             <div class="d-flex align-items-center gap-4">
                 <img src="./img/logo_mobi.webp" alt="" class="img-fluid" style="width: 50px;">
-                <input type="text" class="w-100" placeholder="Bạn muốn tìm gì?...">
+                <div class="form-search">
+                    <input type="text" class="w-100" placeholder="Bạn muốn tìm gì?...">
+                    <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
                 <a href="" class="text-white text-decoration-none"><i class="fa-regular fa-user fs-4"></i> </a>
             </div>
         </div>
@@ -116,26 +119,37 @@
     <div class="menu-mobile-mb">
         <div class="d-flex align-items-center justify-content-center gap-2 pt-2">
             <div style="width: 20%;" class="text-center active">
-                <a href="" class=""><i class="fa-solid fa-house-user"></i><p>Trang chủ</p></a>
+                <a href="" class=""><i class="fa-solid fa-house-user"></i>
+                    <p>Trang chủ</p>
+                </a>
             </div>
             <div style="width: 20%;" class="text-center">
-                <a href=""><i class="fa-regular fa-heart"></i></i><p>Yêu thích</p></a>
+                <a href=""><i class="fa-regular fa-heart"></i></i>
+                    <p>Yêu thích</p>
+                </a>
             </div>
             <div style="width: 20%;" class="text-center">
-                <a href=""><i class="fa-solid fa-bars"></i><p>Danh mục</p></a>
+                <a href=""><i class="fa-solid fa-bars"></i>
+                    <p>Danh mục</p>
+                </a>
             </div>
             <div style="width: 20%;" class="text-center">
-                <a href=""><i class="fa-regular fa-message"></i><p>Tư vấn</p></a>
+                <a href=""><i class="fa-regular fa-message"></i>
+                    <p>Tư vấn</p>
+                </a>
             </div>
             <div style="width: 20%;" class="text-center">
-                <a href=""><i class="fa-solid fa-cart-shopping"></i><p>Giỏ hàng</p></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>
+                    <p>Giỏ hàng</p>
+                </a>
             </div>
         </div>
     </div>
     <main>
         <section class="slider">
             <div class="slider-img">
-                <img src="./img/big_bn_slide_8da64cdf00984930b0d15d2df8d28679.webp" alt="" class="" style="width: 100%;">
+                <img src="./img/big_bn_slide_8da64cdf00984930b0d15d2df8d28679.webp" alt="" class=""
+                    style="width: 100%;">
             </div>
             <!-- Slider main container -->
         </section>
@@ -256,7 +270,7 @@
                 </div>
             </div>
         </section>
-       <section>
+        <section>
             <div class="container p-0">
                 <div class="flash-sale mb-3 rounded-3">
                     <div class="p-3">
@@ -538,7 +552,163 @@
                     </div>
                 </div>
             </div>
-       </section>
+        </section>
+        <section class="rounded-3 mb-3">
+        <div class="container bg-danger p-4 rounded-4">
+            <div class="product-filter">
+                <div class="product-filter-top d-flex align-items-center flex-wrap">
+                    <div class="product-filter-top-box d-flex align-items-center">
+                        <img src="./img/icon-filter.webp" alt="" style="">
+                        <span>Gợi ý cho bạn</span>
+                    </div>
+                    <div class="product-filter-top-box d-flex align-items-center">
+                        <img src="./img/icon-filter.webp" alt="" style="">
+                        <span>Gợi ý cho bạn</span>
+                    </div>
+                    <div class="product-filter-top-box d-flex align-items-center">
+                        <img src="./img/icon-filter.webp" alt="" style="">
+                        <span>Gợi ý cho bạn</span>
+                    </div>
+                    <div class="product-filter-top-box d-flex align-items-center">
+                        <img src="./img/icon-filter.webp" alt="" style="">
+                        <span>Gợi ý cho bạn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flash-list d-flex align-items-center justify-content-center flex-wrap">
+                <div class="flash-item">
+                    <a href="">
+                        <img src="./img/item10.webp" alt="" class="img-fluid">
+                    </a>
+                    <div class="flash-text">
+                        <p class="m-0">Sắp cháy hàng</p>
+                        <p class="m-0">iPhone 13 128GB </p>
+                        <div class="price">
+                            <span class="text-danger">21,590,000đ</span>
+                            <span class="price-sale">
+                                25,600,000₫
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-heart"></i>
+                            <label for="">Yêu thích</label>
+                        </div>
+                    </div>
+                    <span class="label-sale position-absolute">
+                        Giảm 9%
+                    </span>
+                    <span class="label-tag d-flex align-items-center position-absolute">
+                        <img src="./img/hot-sale.webp" alt="" style="width: 18px;">
+                        Sale giữa tháng
+                    </span>
+                </div>
+                <div class="flash-item">
+                    <a href="">
+                        <img src="./img/item10.webp" alt="" class="img-fluid">
+                    </a>
+                    <div class="flash-text">
+                        <p class="m-0">Sắp cháy hàng</p>
+                        <p class="m-0">iPhone 13 128GB </p>
+                        <div class="price">
+                            <span class="text-danger">21,590,000đ</span>
+                            <span class="price-sale">
+                                25,600,000₫
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-heart"></i>
+                            <label for="">Yêu thích</label>
+                        </div>
+                    </div>
+                    <span class="label-sale position-absolute">
+                        Giảm 9%
+                    </span>
+                    <span class="label-tag d-flex align-items-center position-absolute">
+                        <img src="./img/hot-sale.webp" alt="" style="width: 18px;">
+                        Sale giữa tháng
+                    </span>
+                </div>
+                <div class="flash-item">
+                    <a href="">
+                        <img src="./img/item10.webp" alt="" class="img-fluid">
+                    </a>
+                    <div class="flash-text">
+                        <p class="m-0">Sắp cháy hàng</p>
+                        <p class="m-0">iPhone 13 128GB </p>
+                        <div class="price">
+                            <span class="text-danger">21,590,000đ</span>
+                            <span class="price-sale">
+                                25,600,000₫
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-heart"></i>
+                            <label for="">Yêu thích</label>
+                        </div>
+                    </div>
+                    <span class="label-sale position-absolute">
+                        Giảm 9%
+                    </span>
+                    <span class="label-tag d-flex align-items-center position-absolute">
+                        <img src="./img/hot-sale.webp" alt="" style="width: 18px;">
+                        Sale giữa tháng
+                    </span>
+                </div>
+                <div class="flash-item">
+                    <a href="">
+                        <img src="./img/item10.webp" alt="" class="img-fluid">
+                    </a>
+                    <div class="flash-text">
+                        <p class="m-0">Sắp cháy hàng</p>
+                        <p class="m-0">iPhone 13 128GB </p>
+                        <div class="price">
+                            <span class="text-danger">21,590,000đ</span>
+                            <span class="price-sale">
+                                25,600,000₫
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-heart"></i>
+                            <label for="">Yêu thích</label>
+                        </div>
+                    </div>
+                    <span class="label-sale position-absolute">
+                        Giảm 9%
+                    </span>
+                    <span class="label-tag d-flex align-items-center position-absolute">
+                        <img src="./img/hot-sale.webp" alt="" style="width: 18px;">
+                        Sale giữa tháng
+                    </span>
+                </div>
+                <div class="flash-item">
+                    <a href="">
+                        <img src="./img/item10.webp" alt="" class="img-fluid">
+                    </a>
+                    <div class="flash-text">
+                        <p class="m-0">Sắp cháy hàng</p>
+                        <p class="m-0">iPhone 13 128GB </p>
+                        <div class="price">
+                            <span class="text-danger">21,590,000đ</span>
+                            <span class="price-sale">
+                                25,600,000₫
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-heart"></i>
+                            <label for="">Yêu thích</label>
+                        </div>
+                    </div>
+                    <span class="label-sale position-absolute">
+                        Giảm 9%
+                    </span>
+                    <span class="label-tag d-flex align-items-center position-absolute">
+                        <img src="./img/hot-sale.webp" alt="" style="width: 18px;">
+                        Sale giữa tháng
+                    </span>
+                </div>
+            </div>
+        </div>
+        </section>
     </main>
     <footer>
         <!-- place footer here -->
